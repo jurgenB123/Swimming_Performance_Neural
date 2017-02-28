@@ -16,8 +16,8 @@ namespace Neural_Network
             //Console.WriteLine("Write Finished.");
             //Console.ReadLine();
 
-            Console.WriteLine(new Training_and_Performance().train(2, 5, 10));
-            Console.ReadLine();
+            Console.WriteLine(new Training_and_Performance().Train(2, 5, 10));
+            new ConsoleController().FreezeConsole();
         }
     }
 }

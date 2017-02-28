@@ -7,13 +7,16 @@ namespace Neural_Network
         public static void Main()
         {
 
-            Console.WriteLine("Starting Neural Network Heartbeat");
-            Console.WriteLine("Writing to File ...");
+            //Console.WriteLine("Starting Neural Network Heartbeat");
+            //Console.WriteLine("Writing to File ...");
 
-            double[] test = { 1, 2, 3, 4, 5, 6 };
-            new WriteTextFile().writeToFile(PATH, test, "Blowing up this file ... ");
+            //double[] test = { 1, 2, 3, 4, 5, 6 };
+            //new WriteTextFile().writeToFile(PATH, test, "Blowing up this file ... ");
 
-            Console.WriteLine("Write Finished.");
+            //Console.WriteLine("Write Finished.");
+            //Console.ReadLine();
+
+            Console.WriteLine(new Training_and_Performance().train(2, 5, 10));
             Console.ReadLine();
         }
     }

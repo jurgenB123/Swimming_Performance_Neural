@@ -29,24 +29,25 @@ namespace Neural_Network
         }
 
         //Used in Hornik et al. Summation 1
-        public double Summation(double vjl, int k, double summation2)
+        public double Summation(double weight, int numberOfHiddenNeurons, double summation2)
         {
             double sum = 0;
-            for (int i = 0; i < k; i++)
+            for (int i = 0; i < numberOfHiddenNeurons; i++)
             {
-                sum += vjl * summation2;
+                sum += weight * summation2;
             }
 
             return sum;
         }
 
         //Used in Hornik et al. Summation 2
-        public double Summation(double wij, double n, double[] u, double Oi)
+        // n --> renamed to numberOfDataSamples
+        public double Summation(double weight, double numberOfDataSamples, double[] dataArray, double firstBias)
         {
             double sum = 0;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < numberOfDataSamples; i++)
             {
-                sum += wij * u[i] - Oi;
+                sum += weight * dataArray[i] - firstBias;
             }
 
             return sum;

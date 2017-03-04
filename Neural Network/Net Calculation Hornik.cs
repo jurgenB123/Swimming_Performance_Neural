@@ -9,12 +9,11 @@
         * Oiand Ol are polarized value (biases)
         * u is the data vector
         */
-        public double Net(double r, int k, double vjl, double wij, double Oi, double Ol, double[] u)
+        public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
             Sigma sigma = new Sigma();
-            double summation2 = r * (sigma.Summation(wij, k, u, Oi) - Ol);
-            return sigma.Summation(vjl, k, summation2);
+            double summation2 = activationFunctionResult * (sigma.Summation(secondWeight, numberOfHiddenNeurons, dataArray, firstBias) - secondBias);
+            return sigma.Summation(firstWeight, numberOfHiddenNeurons, summation2);
         }
-
     }
 }

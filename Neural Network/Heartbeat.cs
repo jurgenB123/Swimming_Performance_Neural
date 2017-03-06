@@ -17,6 +17,10 @@ namespace Neural_Network
             //Step 3: Activation Function (TrainingAndPerformance)
 
             //Step 4: Save Automation to file
+            
+            //Using the Data Sets
+            DataSets sets = new DataSets();
+            Console.WriteLine(sets.amaSam_ds4.Time);
 
             Console.WriteLine(activation.Train(2, 5, 10));
             new ConsoleController().FreezeConsole();

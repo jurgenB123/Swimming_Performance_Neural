@@ -8,7 +8,8 @@
         * vjl and wij are weights 
         * Oiand Ol are polarized value (biases)
         * u is the data vector
-        */
+        */        
+
         public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
             Sigma sigma = new Sigma();

@@ -35,7 +35,8 @@ namespace Neural_Network
         // S = I ^ (N-1)
         public double GenerateBias(double I, double N)
         {
-            return Math.Pow(I, (N - 1));
+            var S = Math.Pow(I, (N - 1));
+            return S;
         }
 
 
@@ -43,13 +44,15 @@ namespace Neural_Network
         // H Nodes used to form S slices over I intervals
         public double GetNodes(double S, double I)
         {
-            return S * I;
+            var H = S * I;
+            return H;
         }
 
         // |Wi| = H ^ (1/N)
         public double GetWeightMagnitude(double w, double H, double N)
         {
-            return Math.Pow(H, (1 / N));
+            var wi = Math.Pow(H, (1 / N));
+            return wi;
         }
 
         //d(x1, x2) = 0.5 * sin(pi * x1^2) * sin(pi * x2)

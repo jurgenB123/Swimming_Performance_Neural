@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleController.cs" />
+    <Compile Include="DataSets.cs" />
     <Compile Include="Heartbeat.cs" />
+    <Compile Include="Net Calculation Hornik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwimmerRecordDto.cs" />
+    <Compile Include="TimeConverter.cs" />
+    <Compile Include="Training and Performance.cs" />
     <Compile Include="WriteTextFile.cs" />
     <Compile Include="Sigma.cs" />
     <Compile Include="Weight Initialization.cs" />

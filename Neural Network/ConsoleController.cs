@@ -13,5 +13,15 @@ namespace Neural_Network
         {
             Console.WriteLine(content);
         }
+
+        public void ChangeColor(System.ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
+        }
+
+        public void ChangeBackground(System.ConsoleColor color)
+        {
+            Console.BackgroundColor = color;
+        }
     }
 }

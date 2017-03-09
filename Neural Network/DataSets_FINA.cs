@@ -70,22 +70,13 @@
 
         public SwimmerRecordDto[] GetDataSets()
         {
-            SwimmerRecordDto[] danekSheppard = { danekSheppard_ds01, danekSheppard_ds02, danekSheppard_ds03, danekSheppard_ds04, danekSheppard_ds05, danekSheppard_ds06, danekSheppard_ds07, danekSheppard_ds08, danekSheppard_ds09, danekSheppard_ds10 };
-            SwimmerRecordDto[] brianaGerrig = { brianaGerrig_ds01, brianaGerrig_ds02, brianaGerrig_ds03, brianaGerrig_ds04, brianaGerrig_ds05, brianaGerrig_ds06, brianaGerrig_ds07, brianaGerrig_ds08, brianaGerrig_ds09, brianaGerrig_ds10 };
-            SwimmerRecordDto[] adrianaAlbergrid = { adrianaAlbergrid_ds01, adrianaAlbergrid_ds02, adrianaAlbergrid_ds03, adrianaAlbergrid_ds04, adrianaAlbergrid_ds05, adrianaAlbergrid_ds06, adrianaAlbergrid_ds07, adrianaAlbergrid_ds08, adrianaAlbergrid_ds09, adrianaAlbergrid_ds10 };
-            SwimmerRecordDto[] janelleTinker = { janelleTinker_ds01, janelleTinker_ds02, janelleTinker_ds03, janelleTinker_ds04, janelleTinker_ds05, janelleTinker_ds06, janelleTinker_ds07, janelleTinker_ds08, janelleTinker_ds09, janelleTinker_ds10 };
-            SwimmerRecordDto[] jenniZhang = { jenniZhang_ds01, jenniZhang_ds02, jenniZhang_ds03, jenniZhang_ds04, jenniZhang_ds05, jenniZhang_ds06, jenniZhang_ds07, jenniZhang_ds08, jenniZhang_ds09, jenniZhang_ds09 };
+            SwimmerRecordDto[] dataSet = {danekSheppard_ds01, danekSheppard_ds02, danekSheppard_ds03, danekSheppard_ds04, danekSheppard_ds05, danekSheppard_ds06, danekSheppard_ds07, danekSheppard_ds08, danekSheppard_ds09, danekSheppard_ds10,
+            brianaGerrig_ds01, brianaGerrig_ds02, brianaGerrig_ds03, brianaGerrig_ds04, brianaGerrig_ds05, brianaGerrig_ds06, brianaGerrig_ds07, brianaGerrig_ds08, brianaGerrig_ds09, brianaGerrig_ds10,
+            adrianaAlbergrid_ds01, adrianaAlbergrid_ds02, adrianaAlbergrid_ds03, adrianaAlbergrid_ds04, adrianaAlbergrid_ds05, adrianaAlbergrid_ds06, adrianaAlbergrid_ds07, adrianaAlbergrid_ds08, adrianaAlbergrid_ds09, adrianaAlbergrid_ds10,
+            janelleTinker_ds01, janelleTinker_ds02, janelleTinker_ds03, janelleTinker_ds04,janelleTinker_ds05,janelleTinker_ds06,janelleTinker_ds07,janelleTinker_ds08,janelleTinker_ds09,janelleTinker_ds10,
+            jenniZhang_ds01, jenniZhang_ds02,jenniZhang_ds03, jenniZhang_ds04,jenniZhang_ds05,jenniZhang_ds06,jenniZhang_ds07,jenniZhang_ds08,jenniZhang_ds09,jenniZhang_ds10};
 
-            SwimmerRecordDto[] finalResult = { };
-            int setLength = danekSheppard.Length;
-
-            for (int a = 0; a < setLength; a++) finalResult[0] = danekSheppard[a];
-            for (int b = 0; b < setLength; b++) finalResult[10] = brianaGerrig[b];
-            for (int c = 0; c < setLength; c++) finalResult[20] = adrianaAlbergrid[c];
-            for (int d = 0; d < setLength; d++) finalResult[30] = janelleTinker[d];
-            for (int e = 0; e < setLength; e++) finalResult[40] = jenniZhang[e];
-
-            return finalResult;
+            return dataSet;
         }
     }
 }

@@ -12,7 +12,7 @@
 
         public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
-            Sigma sigma = new Sigma();
+            Sigma sigma = new Sigma();  
             double summation2 = activationFunctionResult * (sigma.Summation(secondWeight, numberOfHiddenNeurons, dataArray, firstBias) - secondBias);
             return sigma.Summation(firstWeight, numberOfHiddenNeurons, summation2);
         }

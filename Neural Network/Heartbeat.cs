@@ -14,7 +14,7 @@ namespace Neural_Network
             ArrayHelper helper = new ArrayHelper();
 
             //Predefine Console Presets
-            new ConsoleController().ChangeColor(ConsoleColor.Green);
+            new ConsoleController().ChangeColor(ConsoleColor.Red);
 
             //Generate Data 
             //Using the Data Sets
@@ -36,10 +36,19 @@ namespace Neural_Network
             //SwimmerRecordDto[] sets = { dataSets.adrianaAlbergrid_ds01, dataSets.adrianaAlbergrid_ds02 };
 
             //Step 1: Generate Random Weights (InitializeWeightScheme) -- CHECK METHOD IMPLEMENTATION
-            double firstWeight = weights.InitializeWeightScheme(0.5, 1);
-            double secondWeight = weights.InitializeWeightScheme(0.5, 1);
-            double firstBias = 1;
-            double secondBias = 1;
+            double firstWeight = weights.InitializeWeightScheme(-1, 1);
+            double secondWeight = weights.InitializeWeightScheme(-1, 1);
+            double firstBias = 10;
+            double secondBias = 10;
+
+            //Loggin For Variables
+            Console.WriteLine("First Weight: " + firstWeight);
+            Console.WriteLine("Second Weight: " + secondWeight);
+            Console.WriteLine("First Bias: " + firstBias);
+            Console.WriteLine("Second Bias: " + secondBias);
+            Console.WriteLine("Initial Net: " + net);
+            Console.WriteLine("Initial Activation: " + activation);
+
 
             //Clear File for a new set entry
             save.clearFile(PATH);
@@ -52,10 +61,12 @@ namespace Neural_Network
 
             //Step 2: Net Calculation Hornik
             net = netCalculations.Net(activation, NUMBEROFHIDDENUNITS, firstWeight, secondWeight, firstBias, secondBias, finaSet);
+            new ConsoleController().ChangeColor(ConsoleColor.White);
 
             //Training an Epoch
             for (int x = 0; x < TRAININGDURATION; x++)
             {
+                Console.WriteLine("\n\n");
                 Console.WriteLine("Training Round: " + x);
 
                 //Training the set 
@@ -65,10 +76,13 @@ namespace Neural_Network
                     y_Actual = finaSet[j];
                     net = netCalculations.Net(activation, NUMBEROFHIDDENUNITS, firstWeight, secondWeight, firstBias, secondBias, finaSet);
                     activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
-                    results[j] = Math.Round(activation);
+                    //results[j] = Math.Round(activation);
+                    results[j] = activation;
 
                     Console.WriteLine("Net: " + net + " Activation: " + activation);
                 }
+
+                finaSet = results; //Assign the newly obtained results into the finaSet 
 
                 save.writeToFile(@"C:\Users\user\Desktop\Running and Calories Thesis\Database Archives\Training.txt", results, "Run " + x);
                 save.writeToFile(PATH, "\r\n \r\n", ""); //White-space beautification
@@ -76,6 +90,7 @@ namespace Neural_Network
             }
 
             //Step 4: Save Automation to file
+            new ConsoleController().ChangeColor(ConsoleColor.Green);
             Console.WriteLine("Finished ... ");
 
             new ConsoleController().FreezeConsole();

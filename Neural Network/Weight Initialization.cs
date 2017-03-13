@@ -8,10 +8,8 @@ namespace Neural_Network
         public const double MAGNITUDE_CONST = 0.7;
 
         // Weight W ==> [ -0.5 >= x <= 0.5 ]
-        public double GenerateRandomWeight()
+        public double GenerateRandomWeight(double minimum, double maximum)
         {
-            double maximum = 0.5;
-            double minimum = -0.5;
             return new Random().NextDouble() * (maximum - minimum) + minimum;
         }
 

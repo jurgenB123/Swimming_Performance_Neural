@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Defuzzifier.cs" />
+    <Compile Include="Fuzzifier.cs" />
     <Compile Include="Heartbeat.cs" />
     <Compile Include="Inference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

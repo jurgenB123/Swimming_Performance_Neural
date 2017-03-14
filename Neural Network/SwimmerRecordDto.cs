@@ -2,15 +2,17 @@
 
 namespace Neural_Network
 {
-    class SwimmerRecordDto
+    public class SwimmerRecordDto
     {
         public string Gender { get; set; }
-        public double Time { get; set; }
+        public double FinaPoints { get; set; }
+        public string StrokeType { get; set; }
 
-        public SwimmerRecordDto(string gender, double time)
+        public SwimmerRecordDto(string gender, string strokeType, double finaPoints)
         {
+            this.FinaPoints = finaPoints;
+            this.StrokeType = strokeType;
             this.Gender = gender;
-            this.Time = time;
         }
         
     }

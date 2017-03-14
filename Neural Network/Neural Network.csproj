@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayHelper.cs" />
     <Compile Include="ConsoleController.cs" />
-    <Compile Include="DataSets.cs" />
+    <Compile Include="DataSets_FINA.cs" />
     <Compile Include="Heartbeat.cs" />
     <Compile Include="Net Calculation Hornik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

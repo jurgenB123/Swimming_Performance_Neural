@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Console Helper.cs" />
     <Compile Include="Heartbeat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

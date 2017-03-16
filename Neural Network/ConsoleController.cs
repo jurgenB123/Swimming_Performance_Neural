@@ -2,7 +2,7 @@
 
 namespace Neural_Network
 {
-    class ConsoleController
+    public class ConsoleController
     {
         public void FreezeConsole()
         {

@@ -2,12 +2,28 @@
 {
     using Neural_Network;
     using Fuzzy_Logic;
+    using System;
+
     class Heartbeat
     {
         static void Main(string[] args)
         {
-            //Neural_Network.Heartbeat.Main();
-            Fuzzy_Logic.Heartbeat.Main();
+            Console_Helper consoleHelper = new Console_Helper();
+            consoleHelper.PrintUserInstructons();
+
+            Console.WriteLine("Select one of the above options: ");
+            var userOption = Console.ReadLine();
+            try
+            {
+                int selection = Convert.ToInt32(userOption);
+                consoleHelper.NeuralOrFuzzy(selection);
+
+            }
+            catch (Exception ex)
+            {
+                new Neural_Network.ConsoleController().ChangeColor(ConsoleColor.Red);
+                Console.WriteLine("The option you have selected is invalid \n\n Details: \n" + ex.Message);
+            }
         }
     }
 }

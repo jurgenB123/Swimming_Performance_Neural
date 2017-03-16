@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Neural_Network
 {
-    class Heartbeat
+    public class Heartbeat
     {
         public const String PATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\WriteTest.txt";
         public static void Main()

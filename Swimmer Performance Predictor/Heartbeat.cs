@@ -2,7 +2,7 @@
 {
     using Neural_Network;
     using Fuzzy_Logic;
-    class Program
+    class Heartbeat
     {
         static void Main(string[] args)
         {

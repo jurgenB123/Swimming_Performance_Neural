@@ -10,5 +10,7 @@ namespace Fuzzy_Logic
         {
             return 1000 * Math.Pow((20.91 / currentWorldRecord), 3);
         }
+
+        
     }
 }

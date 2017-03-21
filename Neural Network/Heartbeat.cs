@@ -1,6 +1,8 @@
 ﻿using System;
+using DataStore;
 namespace Neural_Network
 {
+    
     public class Heartbeat
     {
         public const String PATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\WriteTest.txt";

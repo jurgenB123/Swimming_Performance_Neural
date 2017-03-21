@@ -5,34 +5,38 @@ namespace Fuzzy_Logic
     public class Inference
     {
         //Deciding points 
-        public Fuzzifier.Score ConvertFINAToLinguistic(double FINA)
+        public Fuzzifier.Linguistic ConvertFINAToLinguistic(double FINA)
         {
             Fuzzifier fuzzify = new Fuzzifier();
             if ((FINA >= 0) && (FINA < 200))
             {
-                return Fuzzifier.Score.POOR;
+                return Fuzzifier.Linguistic.POOR;
             }
             else if ((FINA >= 200) && (FINA < 400))
             {
-                return Fuzzifier.Score.FAIR;
+                return Fuzzifier.Linguistic.FAIR;
             }
             else if ((FINA >= 400) && (FINA < 600))
             {
-                return Fuzzifier.Score.GOOD;
+                return Fuzzifier.Linguistic.GOOD;
             }
             else if ((FINA >= 600) && (FINA < 800))
             {
-                return Fuzzifier.Score.VERY_GOOD;
+                return Fuzzifier.Linguistic.VERY_GOOD;
             }
             else if ((FINA >= 800) && (FINA <= 1000))
             {
-                return Fuzzifier.Score.EXCELLENT;
+                return Fuzzifier.Linguistic.EXCELLENT;
             }
             else
             {
-                return Fuzzifier.Score.INVALID;
+                return Fuzzifier.Linguistic.INVALID;
             }
+        }
 
+        public String ConstructOutput(Fuzzifier.Linguistic linguistic)
+        {
+            return "The individual scored a " + linguistic.ToString();
         }
     }
 }

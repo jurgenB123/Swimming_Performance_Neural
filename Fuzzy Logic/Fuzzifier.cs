@@ -1,36 +1,36 @@
-﻿namespace Fuzzy_Logic
+﻿using System;
+namespace Fuzzy_Logic
 {
-    using System;
 
     public class Fuzzifier
     {
-        public enum Score { POOR, FAIR, GOOD, VERY_GOOD, EXCELLENT, INVALID };
+        public enum Linguistic { POOR, FAIR, GOOD, VERY_GOOD, EXCELLENT, INVALID };
 
         //Qualify the ENUM into meaningful strings the controller can manipulate
-        public string GetResult(Score result)
+        public string GetResult(Linguistic result)
         {
-            if (result == Score.POOR)
+            if (result == Linguistic.POOR)
             {
                 return "Poor".ToUpper().ToString();
             }
-            else if (result == Score.FAIR)
+            else if (result == Linguistic.FAIR)
             {
                 return "Fair".ToUpper().ToString();
             }
-            else if (result == Score.GOOD)
+            else if (result == Linguistic.GOOD)
             {
                 return "Good".ToUpper().ToString();
             }
-            else if (result == Score.VERY_GOOD)
+            else if (result == Linguistic.VERY_GOOD)
             {
                 return "Very Good".ToUpper().ToString();
 
             }
-            else if (result == Score.EXCELLENT)
+            else if (result == Linguistic.EXCELLENT)
             {
                 return "Excellent".ToUpper().ToString();
             }
-            else if (result == Score.INVALID)
+            else if (result == Linguistic.INVALID)
             {
                 return "Invalid".ToUpper().ToString();
             }

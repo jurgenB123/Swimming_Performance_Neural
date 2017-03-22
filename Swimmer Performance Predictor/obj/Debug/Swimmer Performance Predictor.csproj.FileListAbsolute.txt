@@ -10,3 +10,5 @@ C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\S
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Debug\Swimmer Performance Predictor.pdb
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\DataStore.dll
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\DataStore.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Helpers.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Helpers.pdb

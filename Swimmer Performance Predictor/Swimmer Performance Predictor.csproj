@@ -51,9 +51,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataStore\DataStore.csproj">
+      <Project>{2110b14a-1367-47df-8a19-608ef9a62572}</Project>
+      <Name>DataStore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Fuzzy Logic\Fuzzy Logic.csproj">
       <Project>{e9b2dbde-30cd-4c6a-ab1b-246260404b36}</Project>
       <Name>Fuzzy Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{21ee20eb-54bb-4219-baf1-7a79df0c32cd}</Project>
+      <Name>Helpers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Neural Network\Neural Network.csproj">
       <Project>{3697debc-3737-4a73-9bbf-d3979e02b27d}</Project>

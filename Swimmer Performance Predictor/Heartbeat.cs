@@ -1,4 +1,5 @@
-﻿namespace Swimmer_Performance_Predictor
+﻿using Helpers;
+namespace Swimmer_Performance_Predictor
 {
     using Neural_Network;
     using Fuzzy_Logic;
@@ -21,7 +22,7 @@
             }
             catch (Exception ex)
             {
-                new Neural_Network.ConsoleController().ChangeColor(ConsoleColor.Red);
+                new Helpers.ConsoleController().ChangeColor(ConsoleColor.Red);
                 Console.WriteLine("The option you have selected is invalid \n\n Details: \n" + ex.Message);
             }
         }

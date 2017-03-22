@@ -1,6 +1,7 @@
-﻿namespace Neural_Network
+﻿using Helpers;
+namespace Neural_Network
 {
-    class Net_Calculation_Hornik
+    public class Net_Calculation_Hornik
     {
         /*
         * r is the activation function

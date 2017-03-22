@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neural_Network
+namespace Helpers
 {
     public class ConsoleController
     {

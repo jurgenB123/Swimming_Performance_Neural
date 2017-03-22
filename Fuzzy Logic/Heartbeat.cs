@@ -1,5 +1,6 @@
 ﻿using System;
 using DataStore;
+using Helpers;
 namespace Fuzzy_Logic
 {
     public class Heartbeat
@@ -17,10 +18,6 @@ namespace Fuzzy_Logic
             //Testing Rules Engine 
             var finaPoints = rule.CalculateFINAPoints(20.21, rule.CURRENTWORLDRECORD);
             Console.WriteLine("FINA : " + finaPoints);
-
-            //Testing Inference Engine             
-            Console.WriteLine(inference.ConstructOutput(inference.ConvertFINAToLinguistic(200)));
-
 
             //Algorithm
             //Step 0: Construct the Data Set 
@@ -56,7 +53,8 @@ namespace Fuzzy_Logic
                 Console.WriteLine("Fuzzy: "+fuzzySet[d]+" Result: " + defuzziedSet[d]);
             }
 
-            //Step 4: Pass Defuzzied data through checker to generate final results on how the athlete did
+            //Step 4: Pass Defuzzied data through checker to generate final results on how the athlete did -- Change functionality per athlete 
+            Console.WriteLine("Final Result of Athlete: " + defuzz.GetCentreOfGravity(defuzziedSet, finaSet));
 
             Console.ReadLine();
 

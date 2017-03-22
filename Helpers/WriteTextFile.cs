@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 
-namespace Neural_Network
+namespace Helpers
 {
-    class WriteTextFile
+    public class WriteTextFile
     {
         public void writeToFile(String path, double[] content, String comment)
         {

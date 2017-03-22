@@ -1,4 +1,5 @@
 ﻿using System;
+using Helpers;
 
 namespace Fuzzy_Logic
 {
@@ -34,6 +35,16 @@ namespace Fuzzy_Logic
                 return (int)Resultant.INVALID;
             }
             else throw new Exception("Defuzzification: Something went wrong with the Resultant ...");
+        }
+
+        public double GetCentreOfGravity(int[] resultant, double[] FINA)
+        {
+            Sigma sigma = new Sigma();
+
+            int resultantSigma = sigma.Summation(resultant);
+            double finaSigma = sigma.Summation(FINA);
+
+            return (resultantSigma * FINA[0]) / (resultantSigma);
         }
     }
 

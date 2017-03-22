@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Neural_Network
+namespace DataStore
 {
     public class SwimmerRecordDto
     {

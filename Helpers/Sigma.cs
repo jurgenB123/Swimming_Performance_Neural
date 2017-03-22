@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Neural_Network
+namespace Helpers
 {
-    class Sigma
+    public class Sigma
     {
         //Generic Summation of a number
         public double Summation(double num)
@@ -15,6 +15,29 @@ namespace Neural_Network
 
             return sum;
         }
+
+        public int Summation(int[] array)
+        {
+            int sum = 0;
+            for (var i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+
+            return sum;
+        }
+
+        public double Summation(double[] array)
+        {
+            double sum = 0;
+            for (var i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+
+            return sum;
+        }
+
 
         //Used in Training and Performance 
         public double Summation(double N, double y_Estimate, double y_Actual)

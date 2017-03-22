@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Swimmer Performance Predictor.exe.config
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Swimmer Performance Predictor.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Swimmer Performance Predictor.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Fuzzy Logic.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Neural Network.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Fuzzy Logic.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Neural Network.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Debug\Swimmer Performance Predictor.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Debug\Swimmer Performance Predictor.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Debug\Swimmer Performance Predictor.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\DataStore.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\DataStore.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Helpers.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Debug\Helpers.pdb

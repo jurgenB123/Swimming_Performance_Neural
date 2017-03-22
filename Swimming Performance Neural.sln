@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neural Network", "Neural Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fuzzy Logic", "Fuzzy Logic\Fuzzy Logic.csproj", "{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swimmer Performance Predictor", "Swimmer Performance Predictor\Swimmer Performance Predictor.csproj", "{985B7E8E-3541-444A-8F05-AA9698F1492E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStore", "DataStore\DataStore.csproj", "{2110B14A-1367-47DF-8A19-608EF9A62572}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{21EE20EB-54BB-4219-BAF1-7A79DF0C32CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +23,22 @@ Global
 		{3697DEBC-3737-4A73-9BBF-D3979E02B27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3697DEBC-3737-4A73-9BBF-D3979E02B27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3697DEBC-3737-4A73-9BBF-D3979E02B27D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9B2DBDE-30CD-4C6A-AB1B-246260404B36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985B7E8E-3541-444A-8F05-AA9698F1492E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985B7E8E-3541-444A-8F05-AA9698F1492E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985B7E8E-3541-444A-8F05-AA9698F1492E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985B7E8E-3541-444A-8F05-AA9698F1492E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2110B14A-1367-47DF-8A19-608EF9A62572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2110B14A-1367-47DF-8A19-608EF9A62572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2110B14A-1367-47DF-8A19-608EF9A62572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2110B14A-1367-47DF-8A19-608EF9A62572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21EE20EB-54BB-4219-BAF1-7A79DF0C32CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EE20EB-54BB-4219-BAF1-7A79DF0C32CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EE20EB-54BB-4219-BAF1-7A79DF0C32CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EE20EB-54BB-4219-BAF1-7A79DF0C32CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Helpers\bin\Debug\Helpers.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Helpers\bin\Debug\Helpers.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Helpers\obj\Debug\Helpers.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Helpers\obj\Debug\Helpers.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Swimmer Performance Predictor.exe.config
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Swimmer Performance Predictor.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Swimmer Performance Predictor.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Fuzzy Logic.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Neural Network.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Fuzzy Logic.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\bin\Release\Neural Network.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Release\Swimmer Performance Predictor.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Release\Swimmer Performance Predictor.exe
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Swimmer Performance Predictor\obj\Release\Swimmer Performance Predictor.pdb

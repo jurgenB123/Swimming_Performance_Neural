@@ -1,4 +1,4 @@
-﻿namespace Neural_Network
+﻿namespace DataStore
 {
     public class DataSets_FINA
     {

@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\DataStore\bin\Debug\DataStore.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\DataStore\bin\Debug\DataStore.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\DataStore\obj\Debug\DataStore.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\DataStore\obj\Debug\DataStore.dll
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\DataStore\obj\Debug\DataStore.pdb

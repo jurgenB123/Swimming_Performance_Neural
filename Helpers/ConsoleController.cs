@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Neural_Network
+namespace Helpers
 {
-    class ConsoleController
+    public class ConsoleController
     {
         public void FreezeConsole()
         {

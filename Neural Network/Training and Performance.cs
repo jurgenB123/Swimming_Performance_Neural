@@ -1,4 +1,5 @@
-﻿namespace Neural_Network
+﻿using Helpers;
+namespace Neural_Network
 {
     class Training_and_Performance
     {

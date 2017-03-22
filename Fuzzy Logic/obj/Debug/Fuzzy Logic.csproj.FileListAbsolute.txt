@@ -2,3 +2,4 @@ C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\S
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Fuzzy Logic\bin\Debug\Fuzzy Logic.pdb
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Fuzzy Logic\obj\Debug\Fuzzy Logic.dll
 C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Fuzzy Logic\obj\Debug\Fuzzy Logic.pdb
+C:\Users\user\Desktop\Running and Calories Thesis\Repositories\Neural Networks\Swimming Performance Neural\Fuzzy Logic\obj\Debug\Fuzzy Logic.csprojResolveAssemblyReference.cache

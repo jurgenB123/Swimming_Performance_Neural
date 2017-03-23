@@ -78,5 +78,29 @@
 
             return dataSet;
         }
+
+        public SwimmerRecordDto[] GetDanekSheppard()
+        {
+            return new SwimmerRecordDto[] { danekSheppard_ds01, danekSheppard_ds02, danekSheppard_ds03, danekSheppard_ds04, danekSheppard_ds05, danekSheppard_ds06, danekSheppard_ds07, danekSheppard_ds08, danekSheppard_ds09, danekSheppard_ds10 };
+        }
+        public SwimmerRecordDto[] GetBrianaGerrig()
+        {
+            return new SwimmerRecordDto[] { brianaGerrig_ds01, brianaGerrig_ds02, brianaGerrig_ds03, brianaGerrig_ds04, brianaGerrig_ds05, brianaGerrig_ds06, brianaGerrig_ds07, brianaGerrig_ds08, brianaGerrig_ds09, brianaGerrig_ds10 };
+        }
+
+        public SwimmerRecordDto[] GetAdrianaAlbergrid()
+        {
+            return new SwimmerRecordDto[] { adrianaAlbergrid_ds01, adrianaAlbergrid_ds02, adrianaAlbergrid_ds03, adrianaAlbergrid_ds04, adrianaAlbergrid_ds05, adrianaAlbergrid_ds06, adrianaAlbergrid_ds07, adrianaAlbergrid_ds08, adrianaAlbergrid_ds09, adrianaAlbergrid_ds10 };
+        }
+
+        public SwimmerRecordDto[] GetJanellaTinker()
+        {
+            return new SwimmerRecordDto[] { janelleTinker_ds01, janelleTinker_ds02, janelleTinker_ds03, janelleTinker_ds04, janelleTinker_ds05, janelleTinker_ds06, janelleTinker_ds07, janelleTinker_ds08, janelleTinker_ds09, janelleTinker_ds10 };
+        }
+
+        public SwimmerRecordDto[] GetJenniZhang()
+        {
+            return new SwimmerRecordDto[] { jenniZhang_ds01, jenniZhang_ds02, jenniZhang_ds03, jenniZhang_ds04, jenniZhang_ds05, jenniZhang_ds06, jenniZhang_ds07, jenniZhang_ds08, jenniZhang_ds09, jenniZhang_ds10 };
+        }
     }
 }

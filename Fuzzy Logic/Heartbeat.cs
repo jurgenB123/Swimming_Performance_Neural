@@ -1,6 +1,6 @@
 ﻿using System;
-using DataStore;
 using Helpers;
+using DataStore;
 namespace Fuzzy_Logic
 {
     public class Heartbeat
@@ -56,9 +56,6 @@ namespace Fuzzy_Logic
                 JennieZhang_FINA[a5] = JennieZhang[a5].FinaPoints;
             }
             #endregion
-
-            //Algorithm
-            //Step 0: Construct the Data Set 
 
             #region Step 1: Fuzzify all data into Linguisic Variables for each athlete    
 
@@ -178,7 +175,23 @@ namespace Fuzzy_Logic
             Console.WriteLine("Final Result of Janella Tinker: " + JanellaTinker_Result);
             Console.WriteLine("Final Result of Jennie Zhang: " + JennieZhang_Result);
 
+            string[] finalResult = new string[] {"\r\n"+
+                "Final Result of Participant 1: " + DanekSheppard_Result +"\r\n",
+                "Final Result of Participant 2: " + AdrianaAlbergrid_Result +"\r\n",
+                "Final Result of Participant 3: " + BrianaGerrig_Result+"\r\n",
+                "Final Result of Participant 4: " + JanellaTinker_Result+"\r\n",
+                "Final Result of Participant 5: " + JennieZhang_Result +"\r\n"};
+
+
             #endregion
+
+            #region Save Results to File
+            WriteTextFile save = new WriteTextFile();
+            const string SAVEPATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Results\FuzzyLogicResults.txt";
+            save.clearFile(SAVEPATH);
+            save.writeToFile(SAVEPATH, finalResult, "");
+            #endregion
+
 
             Console.ReadLine();
 

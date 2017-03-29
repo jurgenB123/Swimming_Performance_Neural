@@ -2,7 +2,7 @@
 
 namespace Neural_Network
 {
-    public class Weight_Initialization
+    public class Weight_Initialization_Nyugen_Widrow
     {
         public const double PI = Math.PI;
         public const double MAGNITUDE_CONST = 0.7;

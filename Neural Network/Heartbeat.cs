@@ -11,7 +11,7 @@ namespace Neural_Network
         {
             Net_Calculation_Hornik netCalculations = new Net_Calculation_Hornik();
             Training_and_Performance activationCalculations = new Training_and_Performance();
-            Weight_Initialization weights = new Weight_Initialization();
+            Weight_Initialization_Nyugen_Widrow weights = new Weight_Initialization_Nyugen_Widrow();
             DataSets_FINA dataClass = new DataSets_FINA();
             WriteTextFile save = new WriteTextFile();
             ArrayHelper helper = new ArrayHelper();
@@ -36,10 +36,10 @@ namespace Neural_Network
             double[] results = new double[TRAININGDURATION];
 
             #region Generate Weights and Biases
-            double firstWeight = weights.InitializeWeightScheme(1,1);
-            double secondWeight = weights.InitializeWeightScheme(1,1);
-            double firstBias = 1;
-            double secondBias = 1; 
+            double firstWeight = weights.InitializeWeightScheme(-0.5,1);
+            double secondWeight = weights.InitializeWeightScheme(-0.5,1);
+            double firstBias = 10;
+            double secondBias = 10; 
             #endregion
 
             #region Logging Initial Variables and Presets
@@ -126,7 +126,7 @@ namespace Neural_Network
             Console.WriteLine("Finished ... ");
 
             #endregion
-            new ConsoleController().FreezeConsole();
+            new ConsoleController().FreezeConsole(); 
         }
     }
 }

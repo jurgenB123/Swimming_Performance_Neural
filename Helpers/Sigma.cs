@@ -76,5 +76,16 @@ namespace Helpers
             return sum;
 
         }
+
+        public double Summation(double value, int sizeOfSigma)
+        {
+            double sum = 0;
+            for (var i = 0; i < sizeOfSigma; i++)
+            {
+                sum += value;
+            }
+
+            return sum;
+        }
     }
 }

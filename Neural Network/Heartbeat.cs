@@ -25,6 +25,17 @@ namespace Neural_Network
             double[] finaSet = new double[dataSet.Length];
             Console.WriteLine("Sample data length: " + dataSet.Length);
 
+            #region Get the FINA Points from each Dto
+            for (int i = 0; i < dataSet.Length; i++)
+            {
+                finaSet[i] = dataSet[i].FinaPoints;
+                Console.WriteLine("FINA: " + finaSet[i]);
+            }
+
+            Console.WriteLine("Set Length: " + finaSet.Length);
+            #endregion
+
+            #region Initialize Parameters
             //Define parameters
             const int NUMBEROFHIDDENUNITS = 3;
             const String SAVEPATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Results\NeuralNetworkResults.txt";
@@ -33,11 +44,14 @@ namespace Neural_Network
             double y_Actual = finaSet[0];
             double activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
             const int TRAININGDURATION = 50; //Train the NN x amount of times (specified) 
-            double[] results = new double[TRAININGDURATION];
+            double[] results = new double[TRAININGDURATION]; 
+            #endregion
 
             #region Generate Weights and Biases
-            double firstWeight = weights.InitializeWeightScheme(-0.5,1);
-            double secondWeight = weights.InitializeWeightScheme(-0.5,1);
+            //double firstWeight = weights.InitializeWeightScheme(-0.5,1);
+            //double secondWeight = weights.InitializeWeightScheme(-0.5,1);
+            double firstWeight = 1;
+            double secondWeight = -1;
             double firstBias = 10;
             double secondBias = 10; 
             #endregion
@@ -55,19 +69,9 @@ namespace Neural_Network
 
             #region Prepare File for New Run
             save.clearFile(SAVEPATH); 
-            #endregion
+            #endregion          
 
-            #region Get the FINA Points from each Dto
-            for (int i = 0; i < dataSet.Length; i++)
-            {
-                finaSet[i] = dataSet[i].FinaPoints;
-                Console.WriteLine("FINA: " + finaSet[i]);
-            }
-
-            Console.WriteLine("Set Length: " + finaSet.Length);
-            #endregion
-
-            #region Calculate the Initial Net
+            #region Calculate the Initial Net and Activation
 
             net = netCalculations.Net(activation, NUMBEROFHIDDENUNITS, firstWeight, secondWeight, firstBias, secondBias, finaSet);
             activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
@@ -97,7 +101,7 @@ namespace Neural_Network
                     net = netCalculations.Net(activation, NUMBEROFHIDDENUNITS, firstWeight, secondWeight, firstBias, secondBias, finaSet);
                     #endregion
 
-                    #region Calculate the Activation (Hornik's method)
+                    #region Calculate the Activation
                     activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
                     #endregion
 

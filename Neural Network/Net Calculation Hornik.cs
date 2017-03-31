@@ -14,14 +14,13 @@ namespace Neural_Network
         public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
             Sigma sigma = new Sigma();
-            double dataSetResult = 1;
-            for(int i=0; i<dataArray.Length; i++) dataSetResult *= dataArray[i]; //Multiply all the content of the dataArray
+            double innerSummationMath = 0;
+            for(int i=0; i<dataArray.Length; i++) innerSummationMath += (secondWeight * dataArray[i] - firstBias); //Multiply all the content of the dataArray
 
-            double innerSummationMath = secondWeight * dataSetResult * firstBias;
-            double innerSummation = sigma.Summation(innerSummationMath);
+            double innerSummation = sigma.Summation(innerSummationMath,dataArray.Length);
 
-            double outerSummationMath = firstWeight * activationFunctionResult * innerSummation;
-            double outerSummation = sigma.Summation(outerSummationMath);
+            double outerSummationMath = firstWeight * activationFunctionResult * innerSummation - secondBias;
+            double outerSummation = sigma.Summation(outerSummationMath, numberOfHiddenNeurons);
 
             return outerSummation;
         }

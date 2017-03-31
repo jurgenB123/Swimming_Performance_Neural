@@ -9,13 +9,20 @@ namespace Neural_Network
         * vjl and wij are weights 
         * Oiand Ol are polarized value (biases)
         * u is the data vector
-        */        
+        */
 
         public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
-            Sigma sigma = new Sigma();  
-            double summation2 = activationFunctionResult * (sigma.Summation(secondWeight, numberOfHiddenNeurons, dataArray, firstBias) - secondBias);
-            return sigma.Summation(firstWeight, numberOfHiddenNeurons, summation2);
+            Sigma sigma = new Sigma();
+            double innerSummationMath = 0;
+            for(int i=0; i<dataArray.Length; i++) innerSummationMath += (secondWeight * dataArray[i] - firstBias); //Multiply all the content of the dataArray
+
+            double innerSummation = sigma.Summation(innerSummationMath,dataArray.Length);
+
+            double outerSummationMath = firstWeight * activationFunctionResult * innerSummation - secondBias;
+            double outerSummation = sigma.Summation(outerSummationMath, numberOfHiddenNeurons);
+
+            return outerSummation;
         }
     }
 }

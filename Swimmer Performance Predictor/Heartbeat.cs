@@ -1,8 +1,5 @@
-﻿using Helpers;
-namespace Swimmer_Performance_Predictor
+﻿namespace Swimmer_Performance_Predictor
 {
-    using Neural_Network;
-    using Fuzzy_Logic;
     using System;
 
     class Heartbeat

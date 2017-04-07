@@ -11,7 +11,7 @@ namespace Neural_Network
         * u is the data vector
         */
 
-        public double Net(double activationFunctionResult, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
+        public double Net(double activation, int numberOfHiddenNeurons, double firstWeight, double secondWeight, double firstBias, double secondBias, double[] dataArray)
         {
             Sigma sigma = new Sigma();
             double innerSummationMath = 0;
@@ -19,7 +19,7 @@ namespace Neural_Network
 
             double innerSummation = sigma.Summation(innerSummationMath,dataArray.Length);
 
-            double outerSummationMath = firstWeight * activationFunctionResult * innerSummation - secondBias;
+            double outerSummationMath = firstWeight * activation * innerSummation - secondBias;
             double outerSummation = sigma.Summation(outerSummationMath, numberOfHiddenNeurons);
 
             return outerSummation;

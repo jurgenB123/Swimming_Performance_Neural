@@ -1,6 +1,7 @@
 ﻿using System;
 using Helpers;
 using DataStore;
+
 namespace Fuzzy_Logic
 {
     public class Heartbeat
@@ -15,6 +16,13 @@ namespace Fuzzy_Logic
 
         public static void Main()
         {
+            
+            string DIRECTORY = Properties.Settings.Default.FolderPath;
+            string SAVEPATH = Properties.Settings.Default.FilePath;
+
+            #region Create Save Directory
+            System.IO.Directory.CreateDirectory(DIRECTORY); 
+            #endregion
 
             // Get Datasets for Individuals
             #region Get the whole dataset of each Athlete
@@ -187,7 +195,6 @@ namespace Fuzzy_Logic
 
             #region Save Results to File
             WriteTextFile save = new WriteTextFile();
-            const string SAVEPATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Results\FuzzyLogicResults.txt";
             save.clearFile(SAVEPATH);
             save.writeToFile(SAVEPATH, finalResult, "");
             #endregion

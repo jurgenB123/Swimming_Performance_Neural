@@ -29,22 +29,20 @@ namespace Neural_Network
             for (int i = 0; i < dataSet.Length; i++)
             {
                 finaSet[i] = dataSet[i].FinaPoints;
-                Console.WriteLine("FINA: " + finaSet[i]);
             }
-
-            Console.WriteLine("Set Length: " + finaSet.Length);
             #endregion
 
             #region Initialize Parameters
             //Define parameters
             const int NUMBEROFHIDDENUNITS = 3;
-            const String SAVEPATH = @"C:\Users\user\Desktop\Running and Calories Thesis\Results\NeuralNetworkResults.txt";
+            String SAVEPATH = Properties.Settings.Default.FilePath;
+            String DIRECTORY = Properties.Settings.Default.FolderPath;
             double net = 0;
             double y_Estimate = 0;
-            double y_Actual = finaSet[0];
-            double activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
+            double y_Actual = 0;
+            double activation = 0;
             const int TRAININGDURATION = 50; //Train the NN x amount of times (specified) 
-            double[] results = new double[TRAININGDURATION]; 
+            double[] results = new double[TRAININGDURATION];
             #endregion
 
             #region Generate Weights and Biases
@@ -53,7 +51,7 @@ namespace Neural_Network
             double firstWeight = 1;
             double secondWeight = -1;
             double firstBias = 10;
-            double secondBias = 10; 
+            double secondBias = 10;
             #endregion
 
             #region Logging Initial Variables and Presets
@@ -66,23 +64,15 @@ namespace Neural_Network
             Console.WriteLine("Neural Network will train for " + TRAININGDURATION + " times");
             #endregion
 
+            System.IO.Directory.CreateDirectory(DIRECTORY);
 
             #region Prepare File for New Run
-            save.clearFile(SAVEPATH); 
-            #endregion          
-
-            #region Calculate the Initial Net and Activation
-
-            net = netCalculations.Net(activation, NUMBEROFHIDDENUNITS, firstWeight, secondWeight, firstBias, secondBias, finaSet);
-            activation = activationCalculations.Train(finaSet.Length, y_Estimate, y_Actual);
-
-            Console.WriteLine("Initial Net Value: " + net);
-            Console.WriteLine("Initial Activation Value: " + activation);
-            new ConsoleController().ChangeColor(ConsoleColor.White);
-
+            save.clearFile(SAVEPATH);
             #endregion
 
-            //Training an Epoch
+            new ConsoleController().ChangeColor(ConsoleColor.White);
+
+            //Training an Epoch            
             for (int x = 0; x < TRAININGDURATION; x++)
             {
                 Console.WriteLine("\n\n");
@@ -93,7 +83,7 @@ namespace Neural_Network
                 for (int j = 0; j < dataSet.Length; j++)
                 {
                     #region Set The y_Estimate and y_Actual to be the net and FINA Points in current iteration
-                    y_Estimate = net;
+                    y_Estimate = activation;
                     y_Actual = finaSet[j];
                     #endregion
 
@@ -109,6 +99,7 @@ namespace Neural_Network
                     #region Populate the array for the Neural Network's Epoch and output result to console 
                     results[j] = activation;
                     Console.WriteLine("Net: " + net + " Activation: " + activation);
+                    Console.WriteLine("Current Result: " + results[j]);
                     #endregion
                 }
 
@@ -130,7 +121,7 @@ namespace Neural_Network
             Console.WriteLine("Finished ... ");
 
             #endregion
-            new ConsoleController().FreezeConsole(); 
+            new ConsoleController().FreezeConsole();
         }
     }
 }

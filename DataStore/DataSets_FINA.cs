@@ -1,6 +1,6 @@
 ﻿namespace DataStore
 {
-    public class DataSets_FINA
+    public class DataSets_FINA 
     {
         //Data Sets URL: https://www.swimming.org.nz/results.html
 

@@ -77,6 +77,12 @@ namespace Helpers
 
         }
 
+        /// <summary>
+        /// Sigma Mathematics Functionality
+        /// </summary>
+        /// <param name="value">Equation result inside the sigma</param>
+        /// <param name="sizeOfSigma">How long the summation will run for</param>
+        /// <returns></returns>
         public double Summation(double value, int sizeOfSigma)
         {
             double sum = 0;

@@ -4,7 +4,7 @@ namespace Fuzzy_Logic
 {
     public class Rules
     {
-        public double CURRENTWORLDRECORD = 60.65;
+        public double CURRENTWORLDRECORD = 46.91;
         //Assuming the FINA Points equation
         public double CalculateFINAPoints(double time, double currentWorldRecord)
         {
